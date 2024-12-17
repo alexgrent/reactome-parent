@@ -31,8 +31,7 @@
     </developers>
 
     <properties>
-        <!--             Internal Library            -->
-
+        <!-- Internal Libraries -->
         <reactome.reactome-base.version>2.2.3-SNAPSHOT</reactome.reactome-base.version>
         <reactome.graph-core.version>2.0.9</reactome.graph-core.version>
         <reactome.analysis-core.version>3.4.9</reactome.analysis-core.version>
@@ -48,8 +47,7 @@
         <reactome.reactome-utils.version>1.1.5</reactome.reactome-utils.version>
         <reactome.analysis-report.version>1.2.8</reactome.analysis-report.version>
 
-        <!--            Exterior Endpoints           -->
-
+        <!-- External Libraries -->
         <reactome.content-service.version>2.1.11</reactome.content-service.version>
         <reactome.analysis-service.version>3.1.8</reactome.analysis-service.version>
         <reactome.data-content.version>2.0.10</reactome.data-content.version>
@@ -59,9 +57,7 @@
         <reactome.popular-pathways.version>1.1.7</reactome.popular-pathways.version>
         <reactome.restful-api.version>0.0.5</reactome.restful-api.version>
 
-
-        <!--             Release Pipeline            -->
-
+        <!-- Release Pipeline -->
         <reactome.graph-qa.version>1.1.7</reactome.graph-qa.version>
         <reactome.graph-importer.version>2.0.7</reactome.graph-importer.version>
         <reactome.diagram-converter.version>3.0.7</reactome.diagram-converter.version>
@@ -72,230 +68,42 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--             Internal Library            -->
-
+            <!-- Example Dependency -->
             <dependency>
                 <groupId>org.reactome.base</groupId>
                 <artifactId>reactome-base</artifactId>
                 <version>${reactome.reactome-base.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.graph</groupId>
-                <artifactId>graph-core</artifactId>
-                <version>${reactome.graph-core.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>analysis-core</artifactId>
-                <version>${reactome.analysis-core.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>diagram-reader</artifactId>
-                <version>${reactome.diagram-reader.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>diagram-exporter</artifactId>
-                <version>${reactome.diagram-exporter.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server</groupId>
-                <artifactId>search-indexer</artifactId>
-                <version>${reactome.search-indexer.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>fireworks-exporter</artifactId>
-                <version>${reactome.fireworks-exporter.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>reaction-exporter</artifactId>
-                <version>${reactome.reaction-exporter.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.search</groupId>
-                <artifactId>search-core</artifactId>
-                <version>${reactome.search-core.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.interactors</groupId>
-                <artifactId>interactor-core</artifactId>
-                <version>${reactome.interactor-core.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>sbml-exporter</artifactId>
-                <version>${reactome.sbml-exporter.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>event-pdf</artifactId>
-                <version>${reactome.event-pdf.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.utils</groupId>
-                <artifactId>reactome-utils</artifactId>
-                <version>${reactome.reactome-utils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>analysis-report</artifactId>
-                <version>${reactome.analysis-report.version}</version>
-            </dependency>
-
-            <!--            Exterior Endpoints           -->
-
-            <dependency>
-                <groupId>org.reactome.server.service</groupId>
-                <artifactId>content-service</artifactId>
-                <version>${reactome.content-service.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>analysis-service</artifactId>
-                <version>${reactome.analysis-service.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server</groupId>
-                <artifactId>data-content</artifactId>
-                <version>${reactome.data-content.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server</groupId>
-                <artifactId>report-logger</artifactId>
-                <version>${reactome.report-logger.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server</groupId>
-                <artifactId>experiment-digester</artifactId>
-                <version>${reactome.experiment-digester.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server</groupId>
-                <artifactId>disease-digester</artifactId>
-                <version>${reactome.disease-digester.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.service</groupId>
-                <artifactId>popular-pathways</artifactId>
-                <version>${reactome.popular.pathways.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server</groupId>
-                <artifactId>restfulapi</artifactId>
-                <version>${reactome.restful.api.version}</version>
-            </dependency>
-
-            <!--             Release Pipeline            -->
-
-            <dependency>
-                <groupId>org.reactome.server.qa</groupId>
-                <artifactId>graph-qa</artifactId>
-                <version>${reactome.graph-qa.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.graph</groupId>
-                <artifactId>graph-importer</artifactId>
-                <version>${reactome.graph-importer.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.diagram</groupId>
-                <artifactId>diagram-converter</artifactId>
-                <version>${reactome.diagram-converter.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server</groupId>
-                <artifactId>fireworks-layout</artifactId>
-                <version>${reactome.fireworks-layout.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.qa</groupId>
-                <artifactId>data-export</artifactId>
-                <version>${reactome.data-export.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reactome.server.tools</groupId>
-                <artifactId>interaction-exporter</artifactId>
-                <version>${reactome.interaction-exporter.version}</version>
-            </dependency>
-
-
-
-
         </dependencies>
     </dependencyManagement>
-
 
     <repositories>
         <!-- EBI repo -->
         <repository>
             <id>nexus-ebi-repo</id>
             <name>The EBI internal repository</name>
-            <url>http://localhost:8081/repository/maven-public/</url>
+            <url>https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
             <snapshots>
                 <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <!-- EBI SNAPSHOT repo -->
-        <repository>
-            <id>nexus-ebi-snapshot-repo</id>
-            <name>The EBI internal snapshot repository</name>
-            <url>http://localhost:8081/Tools/maven/repos/content/groups/ebi-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
 
+    <!-- Local Nexus Configuration -->
     <distributionManagement>
-        <!--Configures the distribution to nexus repository. mvn:deploy -->
-        <!-- EBI repo -->
         <repository>
-            <id>pst-release</id>
-            <name>EBI Nexus Repository</name>
-            <url>http://localhost:8081/repository/maven-releases/</url>
+            <id>local-nexus-release</id>
+            <name>Local Nexus Release Repository</name>
+            <url>http://localhost:8081/repository/releases/</url>
         </repository>
-        <!-- EBI SNAPSHOT repo -->
         <snapshotRepository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>pst-snapshots</id>
-            <name>EBI Nexus Snapshots Repository</name>
-            <url>http://localhost:8081/repository/maven-snapshots/</url>
+            <id>local-nexus-snapshots</id>
+            <name>Local Nexus Snapshot Repository</name>
+            <url>http://localhost:8081/repository/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-
 
 </project>
