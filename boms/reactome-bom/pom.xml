@@ -95,14 +95,14 @@
     <!-- Local Nexus Configuration -->
     <distributionManagement>
         <repository>
-            <id>local-nexus-release</id>
+            <id>local-nexus-repo</id>
             <name>Local Nexus Release Repository</name>
-            <url>http://localhost:8081/repository/releases/</url>
+            <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>local-nexus-snapshots</id>
+            <id>llocal-nexus-snapshot-repo</id>
             <name>Local Nexus Snapshot Repository</name>
-            <url>http://localhost:8081/repository/snapshots/</url>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
